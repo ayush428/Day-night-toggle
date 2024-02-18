@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Night Toggle</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s, color 0.3s;
+            background-color: white;
+            color: black;
+        }
+
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .toggle-button {
+            background-color: transparent;
+            color: #333;
+            border: 2px solid #333;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .toggle-button:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Day Night Toggle</h1>
+        <button class="toggle-button" onclick="toggle()">Toggle</button>
+    </div>
+
+    <script>
+        function toggle() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
